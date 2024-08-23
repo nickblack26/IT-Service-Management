@@ -8,11 +8,88 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(AuthenticationManager.self) private var authManager
+    @Binding var isPresented: Bool
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            TextField(
+                "Email",
+                text: $email,
+                prompt: Text("Email...")
+            )
+            .textFieldStyle(.roundedBorder)
+            
+            TextField(
+                "Password",
+                text: $password,
+                prompt: Text(
+                    "Password..."
+                )
+            )
+            .textFieldStyle(.roundedBorder)
+            
+            Button("Sign In") {
+                signIn()
+            }
+            
+            Button("Sign Up") {
+                signUp()
+            }
+        }
+        .frame(minWidth: 250, minHeight: 250)
+        .padding()
+        .onSubmit {
+            signIn()
+        }
+        .labelsHidden()
+        .navigationTitle("Sign In")
+    }
+    
+    func signIn() {
+        guard !email.isEmpty, !password.isEmpty else {return}
+        
+        Task {
+            do {
+                let returnedUser = try await authManager.signInUser(
+                    email: email,
+                    password: password
+                )
+                print("Success")
+                print(returnedUser)
+                self.isPresented = false
+            } catch {
+                print("Error: \(error)")
+            }
+        }
+    } 
+    
+    func signUp() {
+        guard !email.isEmpty, !password.isEmpty else {return}
+        
+        Task {
+            do {
+                let returnedUser = try await authManager.createUser(
+                    email: email,
+                    password: password
+                )
+                print("Success")
+                print(returnedUser)
+                self.isPresented = false
+            } catch {
+                print("Error: \(error)")
+            }
+        }
     }
 }
 
 #Preview {
-    LoginView()
+    @State var authManager = AuthenticationManager()
+    return NavigationStack {
+        LoginView(isPresented: .constant(true))
+    
+    }
+    .environment(authManager)
 }

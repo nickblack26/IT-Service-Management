@@ -1,7 +1,7 @@
 import Foundation
 import FirebaseFirestore
 
-struct Board: Codable, Identifiable {
+struct Board: Identifiable, Codable {
     var id: Int
     var name: String
     var location: DocumentReference?

@@ -8,18 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		1DC29EAF2C76364F0038B544 /* IT_Service_ManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EAE2C76364F0038B544 /* IT_Service_ManagementApp.swift */; };
-		1DC29EB12C76364F0038B544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EB02C76364F0038B544 /* ContentView.swift */; };
+		1DC29EB12C76364F0038B544 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EB02C76364F0038B544 /* RootView.swift */; };
 		1DC29EB32C7636500038B544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC29EB22C7636500038B544 /* Assets.xcassets */; };
 		1DC29EB72C7636500038B544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC29EB62C7636500038B544 /* Preview Assets.xcassets */; };
+		1DC29EBE2C7636920038B544 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DC29EBD2C7636920038B544 /* GoogleService-Info.plist */; };
+		1DC29EC12C76372F0038B544 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC29EC02C76372F0038B544 /* FirebaseAnalytics */; };
+		1DC29EC32C76372F0038B544 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC29EC22C76372F0038B544 /* FirebaseAuth */; };
+		1DC29EC52C76372F0038B544 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC29EC42C76372F0038B544 /* FirebaseDatabase */; };
+		1DC29EC72C76372F0038B544 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC29EC62C76372F0038B544 /* FirebaseFirestore */; };
+		1DC29ECA2C763A110038B544 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EC92C763A110038B544 /* LoginView.swift */; };
+		1DC29ECD2C763B200038B544 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29ECC2C763B200038B544 /* FirebaseManager.swift */; };
+		1DC29ECF2C764C9A0038B544 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29ECE2C764C9A0038B544 /* SettingsView.swift */; };
+		1DC29ED12C764EDC0038B544 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29ED02C764EDC0038B544 /* UserManager.swift */; };
+		1DC29ED42C7654150038B544 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29ED32C7654150038B544 /* Board.swift */; };
+		1DC29ED62C7655A30038B544 /* BoardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29ED52C7655A30038B544 /* BoardsView.swift */; };
+		1DC29ED92C766B780038B544 /* BoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29ED82C766B780038B544 /* BoardManager.swift */; };
+		1DC29EDB2C7670F10038B544 /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EDA2C7670F10038B544 /* Department.swift */; };
+		1DC29EDD2C7671230038B544 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EDC2C7671230038B544 /* Location.swift */; };
+		1DC29EDF2C7673250038B544 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EDE2C7673250038B544 /* Ticket.swift */; };
+		1DC29EE12C7673D20038B544 /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EE02C7673D20038B544 /* TicketListView.swift */; };
+		1DC29EE32C76740B0038B544 /* TicketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC29EE22C76740B0038B544 /* TicketManager.swift */; };
+		1DC527F42C79214C00C68225 /* AuditTrailEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC527F32C79214C00C68225 /* AuditTrailEntry.swift */; };
+		1DC527F72C79284400C68225 /* Listenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC527F62C79284400C68225 /* Listenable.swift */; };
+		1DC527F92C79285D00C68225 /* Gettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC527F82C79285D00C68225 /* Gettable.swift */; };
+		1DC527FB2C792F9D00C68225 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC527FA2C792F9D00C68225 /* Contact.swift */; };
+		1DC527FD2C79316D00C68225 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC527FC2C79316D00C68225 /* Company.swift */; };
+		1DC527FF2C7931C400C68225 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC527FE2C7931C400C68225 /* Configuration.swift */; };
+		1DC528012C79320C00C68225 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC528002C79320C00C68225 /* Organization.swift */; };
+		1DC528062C793FCB00C68225 /* MultiSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC528052C793FCB00C68225 /* MultiSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DC29EAB2C76364F0038B544 /* IT Service Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IT Service Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC29EAE2C76364F0038B544 /* IT_Service_ManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IT_Service_ManagementApp.swift; sourceTree = "<group>"; };
-		1DC29EB02C76364F0038B544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1DC29EB02C76364F0038B544 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1DC29EB22C7636500038B544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DC29EB42C7636500038B544 /* IT_Service_Management.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IT_Service_Management.entitlements; sourceTree = "<group>"; };
 		1DC29EB62C7636500038B544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DC29EBD2C7636920038B544 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DC29EC92C763A110038B544 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1DC29ECC2C763B200038B544 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		1DC29ECE2C764C9A0038B544 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1DC29ED02C764EDC0038B544 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		1DC29ED32C7654150038B544 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		1DC29ED52C7655A30038B544 /* BoardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsView.swift; sourceTree = "<group>"; };
+		1DC29ED72C766A5A0038B544 /* IT-Service-Management-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IT-Service-Management-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1DC29ED82C766B780038B544 /* BoardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardManager.swift; sourceTree = "<group>"; };
+		1DC29EDA2C7670F10038B544 /* Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		1DC29EDC2C7671230038B544 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1DC29EDE2C7673250038B544 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		1DC29EE02C7673D20038B544 /* TicketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
+		1DC29EE22C76740B0038B544 /* TicketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketManager.swift; sourceTree = "<group>"; };
+		1DC527F32C79214C00C68225 /* AuditTrailEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditTrailEntry.swift; sourceTree = "<group>"; };
+		1DC527F62C79284400C68225 /* Listenable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listenable.swift; sourceTree = "<group>"; };
+		1DC527F82C79285D00C68225 /* Gettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
+		1DC527FA2C792F9D00C68225 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		1DC527FC2C79316D00C68225 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		1DC527FE2C7931C400C68225 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1DC528002C79320C00C68225 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		1DC528052C793FCB00C68225 /* MultiSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC29EC52C76372F0038B544 /* FirebaseDatabase in Frameworks */,
+				1DC29EC72C76372F0038B544 /* FirebaseFirestore in Frameworks */,
+				1DC29EC12C76372F0038B544 /* FirebaseAnalytics in Frameworks */,
+				1DC29EC32C76372F0038B544 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +103,18 @@
 		1DC29EAD2C76364F0038B544 /* IT Service Management */ = {
 			isa = PBXGroup;
 			children = (
-				1DC29EAE2C76364F0038B544 /* IT_Service_ManagementApp.swift */,
-				1DC29EB02C76364F0038B544 /* ContentView.swift */,
+				1DC528022C793BD700C68225 /* Styles */,
 				1DC29EB22C7636500038B544 /* Assets.xcassets */,
+				1DC29EBD2C7636920038B544 /* GoogleService-Info.plist */,
 				1DC29EB42C7636500038B544 /* IT_Service_Management.entitlements */,
+				1DC29EAE2C76364F0038B544 /* IT_Service_ManagementApp.swift */,
+				1DC29ED72C766A5A0038B544 /* IT-Service-Management-Info.plist */,
+				1DC29ECB2C763B0D0038B544 /* Managers */,
+				1DC29ED22C76540D0038B544 /* Models */,
 				1DC29EB52C7636500038B544 /* Preview Content */,
+				1DC527F52C79283A00C68225 /* Protocols */,
+				1DC29EB02C76364F0038B544 /* RootView.swift */,
+				1DC29EC82C763A030038B544 /* Views */,
 			);
 			path = "IT Service Management";
 			sourceTree = "<group>";
@@ -67,6 +125,61 @@
 				1DC29EB62C7636500038B544 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DC29EC82C763A030038B544 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DC29ED52C7655A30038B544 /* BoardsView.swift */,
+				1DC29EC92C763A110038B544 /* LoginView.swift */,
+				1DC29ECE2C764C9A0038B544 /* SettingsView.swift */,
+				1DC29EE02C7673D20038B544 /* TicketListView.swift */,
+				1DC528052C793FCB00C68225 /* MultiSelector.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DC29ECB2C763B0D0038B544 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1DC29ED82C766B780038B544 /* BoardManager.swift */,
+				1DC29ECC2C763B200038B544 /* FirebaseManager.swift */,
+				1DC29EE22C76740B0038B544 /* TicketManager.swift */,
+				1DC29ED02C764EDC0038B544 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1DC29ED22C76540D0038B544 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DC527F32C79214C00C68225 /* AuditTrailEntry.swift */,
+				1DC29ED32C7654150038B544 /* Board.swift */,
+				1DC527FC2C79316D00C68225 /* Company.swift */,
+				1DC527FE2C7931C400C68225 /* Configuration.swift */,
+				1DC527FA2C792F9D00C68225 /* Contact.swift */,
+				1DC29EDA2C7670F10038B544 /* Department.swift */,
+				1DC29EDC2C7671230038B544 /* Location.swift */,
+				1DC528002C79320C00C68225 /* Organization.swift */,
+				1DC29EDE2C7673250038B544 /* Ticket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DC527F52C79283A00C68225 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1DC527F62C79284400C68225 /* Listenable.swift */,
+				1DC527F82C79285D00C68225 /* Gettable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1DC528022C793BD700C68225 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +198,12 @@
 			dependencies = (
 			);
 			name = "IT Service Management";
+			packageProductDependencies = (
+				1DC29EC02C76372F0038B544 /* FirebaseAnalytics */,
+				1DC29EC22C76372F0038B544 /* FirebaseAuth */,
+				1DC29EC42C76372F0038B544 /* FirebaseDatabase */,
+				1DC29EC62C76372F0038B544 /* FirebaseFirestore */,
+			);
 			productName = "IT Service Management";
 			productReference = 1DC29EAB2C76364F0038B544 /* IT Service Management.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 1DC29EA22C76364F0038B544;
+			packageReferences = (
+				1DC29EBF2C76372F0038B544 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1DC29EAC2C76364F0038B544 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +251,7 @@
 			files = (
 				1DC29EB72C7636500038B544 /* Preview Assets.xcassets in Resources */,
 				1DC29EB32C7636500038B544 /* Assets.xcassets in Resources */,
+				1DC29EBE2C7636920038B544 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +262,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC29EB12C76364F0038B544 /* ContentView.swift in Sources */,
+				1DC527FD2C79316D00C68225 /* Company.swift in Sources */,
+				1DC527FB2C792F9D00C68225 /* Contact.swift in Sources */,
+				1DC528062C793FCB00C68225 /* MultiSelector.swift in Sources */,
+				1DC29ED92C766B780038B544 /* BoardManager.swift in Sources */,
+				1DC29ED12C764EDC0038B544 /* UserManager.swift in Sources */,
+				1DC528012C79320C00C68225 /* Organization.swift in Sources */,
+				1DC29ED62C7655A30038B544 /* BoardsView.swift in Sources */,
+				1DC29ED42C7654150038B544 /* Board.swift in Sources */,
+				1DC527FF2C7931C400C68225 /* Configuration.swift in Sources */,
+				1DC29ECF2C764C9A0038B544 /* SettingsView.swift in Sources */,
+				1DC527F42C79214C00C68225 /* AuditTrailEntry.swift in Sources */,
+				1DC29EE12C7673D20038B544 /* TicketListView.swift in Sources */,
+				1DC29EDD2C7671230038B544 /* Location.swift in Sources */,
+				1DC29ECA2C763A110038B544 /* LoginView.swift in Sources */,
+				1DC29EDF2C7673250038B544 /* Ticket.swift in Sources */,
+				1DC527F92C79285D00C68225 /* Gettable.swift in Sources */,
+				1DC29ECD2C763B200038B544 /* FirebaseManager.swift in Sources */,
+				1DC29EB12C76364F0038B544 /* RootView.swift in Sources */,
 				1DC29EAF2C76364F0038B544 /* IT_Service_ManagementApp.swift in Sources */,
+				1DC29EDB2C7670F10038B544 /* Department.swift in Sources */,
+				1DC527F72C79284400C68225 /* Listenable.swift in Sources */,
+				1DC29EE32C76740B0038B544 /* TicketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +417,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IT-Service-Management-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +456,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IT-Service-Management-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -359,6 +504,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DC29EBF2C76372F0038B544 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DC29EC02C76372F0038B544 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DC29EBF2C76372F0038B544 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1DC29EC22C76372F0038B544 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DC29EBF2C76372F0038B544 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1DC29EC42C76372F0038B544 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DC29EBF2C76372F0038B544 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		1DC29EC62C76372F0038B544 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DC29EBF2C76372F0038B544 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DC29EA32C76364F0038B544 /* Project object */;
 }

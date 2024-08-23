@@ -1,8 +1,8 @@
-//
-//  Configuration.swift
-//  IT Service Management
-//
-//  Created by Nick Black on 8/23/24.
-//
-
 import Foundation
+import FirebaseFirestore
+
+struct Configuration: Identifiable, Codable {
+    var id: Int
+    var name: String
+    var contact: DocumentReference
+}
